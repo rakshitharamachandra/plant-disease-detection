@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Disease Detection Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://images.pexels.com/photos/808510/pexels-photo-808510.jpeg?cs=srgb&dl=pexels-muhammad-khairul-iddin-adnan-808510.jpg&fm=jpg');
+        }
+
+        header {
+            background-color: #129e87;
+            color: #ecf0f1;
+            text-align: center;
+            padding: 1em;
+
+        }
+
+        section {
+            margin: 2em;
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 1em;
+        }
+
+        h2 {
+            color: #ffffff;
+        }
+
+        p {
+            color: #ffffff;
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 2em;
+        }
+
+        .feature {
+            width: 30%;
+            padding: 1em;
+            border: 1px solid #bdc3c7;
+            border-radius: 8px;
+            background-color: #129e87;
+        }
+
+        .contact {
+            margin-top: 2em;
+            background-color: #129e87;
+            text-align: center;
+            color: #ecf0f1;
+            padding: 1em;
+            
+        }
+        .button {
+            color: azure;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Plant Disease Detection </h1>
+        <p>Welcome to Our Innovative Solution for Healthy Crops</p>
+    </header>
+
+    <section>
+        <section>
+            <button class="button"><a href="predictor">Image analysis</a></button>
+        </section>
+
+        <h2>Key Features</h2>
+        <div class="features">
+            <div class="feature">
+                <h3>Fast and Accurate Detection</h3>
+                <p>Our advanced algorithms ensure quick and precise identification of plant diseases.</p>
+            </div>
+            <div class="feature">
+                <h3>User-Friendly Interface</h3>
+                <p>Intuitive design for easy navigation, making it accessible for farmers and researchers alike.</p>
+            </div>
+            <div class="feature">
+                <h3>Real-Time Monitoring</h3>
+                <p>Stay informed about the health of your crops with our real-time monitoring system.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Why Choose Our System?</h2>
+        <div class="features">
+            <div class="feature">
+                <h3>Cutting-Edge Technology</h3>
+                <p>Leveraging the latest in computer vision and machine learning to revolutionize plant disease diagnosis.</p>
+            </div>
+            <div class="feature">
+                <h3>Data-Driven Insights</h3>
+                <p>Make informed decisions with comprehensive data analysis and insightful reports.</p>
+            </div>
+            <div class="feature">
+                <h3>Empowering Farmers</h3>
+                <p>Supporting farmers in safeguarding their crops and maximizing yield.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>How It Works</h2>
+        <p>1. Image Capture: Take a photo of the plant leaves showing signs of disease.</p>
+        <p>2. Upload Image: Upload the image through our user-friendly interface.</p>
+        <p>3. Analysis: Our system will analyze the image using advanced algorithms to detect and identify the disease.</p>
+        <p>4. Receive Results: Get instant results with details about the detected disease and recommended actions.</p>
+    </section>
+
+    <section>
+        <h2>Join Us in the Fight for Healthy Crops!</h2>
+        <p>- Contribute Data: Help improve our system by contributing images and data for ongoing research.</p>
+        <p>- Connect with Experts: Engage with our community of experts and fellow farmers to share knowledge and experiences.</p>
+    </section>
+
+    <div class="contact">
+        <h2>Contact Us</h2>
+        <p>Email: ashwinthamban22@gmail.com,rrakshitha309@gmail.com</p>
+        <p>Phone: 7306596892<br>9645491918</p>
+        <p>Address: MSRIT Labs,Mathikere,Bangalore</p>
+    </div>
+
+    <script>
+        function previewImage() {
+            const input = document.getElementById('plantImage');
+            const imagePreview = document.getElementById('imagePreview');
+
+            const imageFile = input.files[0];
+            if (imageFile) {
+                const previewURL = URL.createObjectURL(imageFile);
+                imagePreview.src = previewURL;
+            }
+        }
+    </script>
+
+</body>
+</html>

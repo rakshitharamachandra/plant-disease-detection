@@ -1,0 +1,76 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eff5e9; /* Light green background */
+    color: #34495e; /* Dark blue text */
+}
+
+header {
+    background-color: #2ecc71; /* Dark green header */
+    color: #ecf0f1; /* White text */
+    text-align: center;
+    padding: 2em 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle lift */
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #ecf0f1; /* White heading */
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    color: #ecf0f1; /* White text */
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    margin-right: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ecf0f1;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #27ae60; /* Slightly darker green on hover */
+}
+
+section {
+    margin: 2em;
+    text-align: center;
+}
+
+.community-info {
+    background-color: #3498db; /* Blue background for community info */
+    color: #ecf0f1; /* White text */
+    padding: 1em;
+    border-radius: 8px;
+}
+
+.support-contact {
+    background-color: #2c3e50; /* Dark background for support contact */
+    color: #ecf0f1; /* White text */
+    padding: 1em;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #2c3e50; /* Dark footer background */
+    color: #ecf0f1; /* White text */
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
